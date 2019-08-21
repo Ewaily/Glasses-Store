@@ -12,6 +12,12 @@
 		10965382230AFB2600CB4685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10965380230AFB2600CB4685 /* Main.storyboard */; };
 		10965384230AFB2700CB4685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10965383230AFB2700CB4685 /* Assets.xcassets */; };
 		10965387230AFB2700CB4685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10965385230AFB2700CB4685 /* LaunchScreen.storyboard */; };
+		858CA9A0230B00A9003BA207 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA99F230B00A9003BA207 /* Item.swift */; };
+		858CA9A3230B01C6003BA207 /* Glasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A2230B01C6003BA207 /* Glasses.swift */; };
+		858CA9A5230B02C0003BA207 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A4230B02C0003BA207 /* Dimension.swift */; };
+		858CA9A7230B0873003BA207 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A6230B0873003BA207 /* Address.swift */; };
+		858CA9A9230B0A49003BA207 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A8230B0A49003BA207 /* Store.swift */; };
+		858CA9AB230B0D10003BA207 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9AA230B0D10003BA207 /* Brand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		10965383230AFB2700CB4685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10965386230AFB2700CB4685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10965388230AFB2700CB4685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858CA99F230B00A9003BA207 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		858CA9A2230B01C6003BA207 /* Glasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glasses.swift; sourceTree = "<group>"; };
+		858CA9A4230B02C0003BA207 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		858CA9A6230B0873003BA207 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		858CA9A8230B0A49003BA207 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		858CA9AA230B0D10003BA207 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		1096537B230AFB2600CB4685 /* Glasses Store */ = {
 			isa = PBXGroup;
 			children = (
+				858CA9A1230B00C7003BA207 /* Extentions */,
+				858CA99E230AFFC9003BA207 /* Control */,
+				858CA99D230AFF98003BA207 /* View */,
+				858CA99C230AFF6D003BA207 /* Model */,
 				1096537C230AFB2600CB4685 /* AppDelegate.swift */,
-				1096537E230AFB2600CB4685 /* ViewController.swift */,
-				10965380230AFB2600CB4685 /* Main.storyboard */,
 				10965383230AFB2700CB4685 /* Assets.xcassets */,
-				10965385230AFB2700CB4685 /* LaunchScreen.storyboard */,
 				10965388230AFB2700CB4685 /* Info.plist */,
 			);
 			path = "Glasses Store";
+			sourceTree = "<group>";
+		};
+		858CA99C230AFF6D003BA207 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				858CA99F230B00A9003BA207 /* Item.swift */,
+				858CA9A2230B01C6003BA207 /* Glasses.swift */,
+				858CA9A4230B02C0003BA207 /* Dimension.swift */,
+				858CA9A6230B0873003BA207 /* Address.swift */,
+				858CA9A8230B0A49003BA207 /* Store.swift */,
+				858CA9AA230B0D10003BA207 /* Brand.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		858CA99D230AFF98003BA207 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10965380230AFB2600CB4685 /* Main.storyboard */,
+				10965385230AFB2700CB4685 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		858CA99E230AFFC9003BA207 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				1096537E230AFB2600CB4685 /* ViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		858CA9A1230B00C7003BA207 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858CA9A9230B0A49003BA207 /* Store.swift in Sources */,
+				858CA9A7230B0873003BA207 /* Address.swift in Sources */,
 				1096537F230AFB2600CB4685 /* ViewController.swift in Sources */,
+				858CA9A0230B00A9003BA207 /* Item.swift in Sources */,
+				858CA9A3230B01C6003BA207 /* Glasses.swift in Sources */,
+				858CA9AB230B0D10003BA207 /* Brand.swift in Sources */,
+				858CA9A5230B02C0003BA207 /* Dimension.swift in Sources */,
 				1096537D230AFB2600CB4685 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6675BR2529;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Glasses Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6675BR2529;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Glasses Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
