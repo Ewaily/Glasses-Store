@@ -6,21 +6,25 @@
 //  Copyright © 2019 Muhammad Ewaily. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Item{
-    @objc dynamic private var name : String;
-    @objc dynamic private var price : Double;
-    @objc dynamic private var description : String  = "This item has no description";
+    private (set) var name : String;
+     private var price : Double;
+     private var description : String  = "This item has no description";
     @objc dynamic private var id : Int = 0;
+    private (set) var mainImage : UIImage;
     
-    init(name:String, price : Double){
+    init(name:String, price : Double, image : UIImage){
         self.name = name;
         self.price = price;
+        self.mainImage = image;
     }
-    init(name:String, price : Double, description : String){
+    init(name:String, price : Double, image : UIImage, description : String){
         self.name = name;
         self.price = price;
         self.description = description;
+        self.mainImage = image;
+
     }
 }

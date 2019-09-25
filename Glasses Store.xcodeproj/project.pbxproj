@@ -12,9 +12,11 @@
 		10965382230AFB2600CB4685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10965380230AFB2600CB4685 /* Main.storyboard */; };
 		10965384230AFB2700CB4685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10965383230AFB2700CB4685 /* Assets.xcassets */; };
 		10965387230AFB2700CB4685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10965385230AFB2700CB4685 /* LaunchScreen.storyboard */; };
+		851D68A32332C4F600A3284C /* DetailedGlassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D68A22332C4F600A3284C /* DetailedGlassesViewController.swift */; };
 		858C2138231C4A7200C88BC6 /* CustomSegmentControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C2137231C4A7200C88BC6 /* CustomSegmentControll.swift */; };
 		858C213A231D3C6200C88BC6 /* GlassesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C2139231D3C6200C88BC6 /* GlassesListViewController.swift */; };
 		858C213C2320151100C88BC6 /* CardTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C213B2320151100C88BC6 /* CardTabelViewCell.swift */; };
+		858C213E23243F5B00C88BC6 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C213D23243F5B00C88BC6 /* FavoriteButton.swift */; };
 		858CA9A0230B00A9003BA207 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA99F230B00A9003BA207 /* Item.swift */; };
 		858CA9A3230B01C6003BA207 /* Glasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A2230B01C6003BA207 /* Glasses.swift */; };
 		858CA9A5230B02C0003BA207 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CA9A4230B02C0003BA207 /* Dimension.swift */; };
@@ -31,9 +33,11 @@
 		10965383230AFB2700CB4685 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10965386230AFB2700CB4685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10965388230AFB2700CB4685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		851D68A22332C4F600A3284C /* DetailedGlassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedGlassesViewController.swift; sourceTree = "<group>"; };
 		858C2137231C4A7200C88BC6 /* CustomSegmentControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControll.swift; sourceTree = "<group>"; };
 		858C2139231D3C6200C88BC6 /* GlassesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesListViewController.swift; sourceTree = "<group>"; };
 		858C213B2320151100C88BC6 /* CardTabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTabelViewCell.swift; sourceTree = "<group>"; };
+		858C213D23243F5B00C88BC6 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		858CA99F230B00A9003BA207 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		858CA9A2230B01C6003BA207 /* Glasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glasses.swift; sourceTree = "<group>"; };
 		858CA9A4230B02C0003BA207 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				1096537E230AFB2600CB4685 /* FirstViewController.swift */,
 				858C2139231D3C6200C88BC6 /* GlassesListViewController.swift */,
+				851D68A22332C4F600A3284C /* DetailedGlassesViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			children = (
 				858C2137231C4A7200C88BC6 /* CustomSegmentControll.swift */,
 				858C213B2320151100C88BC6 /* CardTabelViewCell.swift */,
+				858C213D23243F5B00C88BC6 /* FavoriteButton.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 				858CA9A9230B0A49003BA207 /* Store.swift in Sources */,
 				858CA9A7230B0873003BA207 /* Address.swift in Sources */,
 				1096537F230AFB2600CB4685 /* FirstViewController.swift in Sources */,
+				858C213E23243F5B00C88BC6 /* FavoriteButton.swift in Sources */,
 				858CA9A0230B00A9003BA207 /* Item.swift in Sources */,
 				858CA9A3230B01C6003BA207 /* Glasses.swift in Sources */,
+				851D68A32332C4F600A3284C /* DetailedGlassesViewController.swift in Sources */,
 				858C2138231C4A7200C88BC6 /* CustomSegmentControll.swift in Sources */,
 				858CA9AB230B0D10003BA207 /* Brand.swift in Sources */,
 				858C213C2320151100C88BC6 /* CardTabelViewCell.swift in Sources */,

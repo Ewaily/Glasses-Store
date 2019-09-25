@@ -6,7 +6,7 @@
 //  Copyright © 2019 Muhammad Ewaily. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum Size{
     case Small
@@ -29,16 +29,19 @@ class Glasses: Item {
     private let size : Size;
     private let store : Store;
     private let brand : Brand;
-    private let color : Color;
+    private let color : Color;// this should be array of colors.
+    //  should be for each color array of images.
+    var favroite : Bool = false;
+    private (set) var  images : [UIImage];
     
-    
-    init(name:String, price : Double, description : String, size : Size, store : Store, brand: Brand, color:Color, dimension : Dimension){
+    init(name:String, price : Double, description : String, size : Size, store : Store, brand: Brand, color:Color, dimension : Dimension, image : UIImage, images : [UIImage] ){
         self.dimension = dimension;
         self.size = size;
         self.brand = brand;
         self.color = color;
         self.store = store;
-        super.init(name: name, price: price, description: description);
+        self.images = images;
+        super.init(name: name, price: price, image: image, description: description);
     }
     
     
